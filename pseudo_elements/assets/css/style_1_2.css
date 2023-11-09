@@ -1,0 +1,100 @@
+/* global styling */
+
+@font-face {
+    font-family: 'Monsterrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0 0 0 2px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Monsterrat';
+}
+
+/* h3 Styling */
+
+h3 {
+    margin-bottom: 20px;
+}
+
+h3::first-letter {
+    font-size: 40px;
+    color: rgb(9, 123, 121);
+}
+
+h3:hover::first-letter {
+    color: turquoise;
+}
+
+/* List Styling */
+
+ul {
+    margin-left: 38px;
+    margin-bottom: 15px;
+}
+
+ul li:nth-of-type(1)::first-letter {
+    font-size: 40px;
+    color: turquoise;
+    text-decoration: overline;
+}
+
+ul li:nth-of-type(2)::first-letter {
+    font-size: 40px;
+    color: red;
+    text-decoration: underline;
+}
+
+ul li:nth-of-type(3)::first-letter {
+    font-size: 40px;
+    color: greenyellow;
+    text-decoration: line-through;
+}
+
+ul li:nth-of-type(3) {
+    text-decoration: line-through;
+}
+
+/* Section Styling */
+
+section p {
+    margin-bottom: 15px;
+}
+
+section p::first-line {
+    color: rgb(56, 185, 56);
+}
+
+section p:nth-of-type(even) {
+    font-size: 30px;
+}
+
+section p:nth-of-type(even):first-letter {
+    font-size: 40px;
+    color: red;
+}
+
+section p:nth-of-type(3), section p:nth-of-type(5) {
+    font-size: 15px;
+}
+
+section p:nth-of-type(3):first-letter, section p:nth-of-type(5):first-letter {
+    font-size: 25px;
+    color: red;
+}
+
+section p:nth-of-type(1) {
+    color: gray;
+    text-indent: 50px;
+}
+
+section p:nth-of-type(1)::first-line {
+    font-size: 20px;
+    color: gray;
+}
+
+.hover__color_blue:hover::first-line {
+    color: rgb(0, 98, 255);
+}

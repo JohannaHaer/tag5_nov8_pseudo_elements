@@ -1,0 +1,27 @@
+/*  Global Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* p-Tag stylen */
+
+p {
+    border: 2px solid #FFCC00;
+}
+
+p::before {
+    content: 'Info';
+    background-color: #FFCC00;
+}
+
+p::after {
+    content: '💛';
+}
+
+p::selection {
+    color: #FFCC00;
+    text-decoration: underline;
+}

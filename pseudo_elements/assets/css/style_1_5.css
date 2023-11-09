@@ -1,0 +1,73 @@
+/*  Global Styling */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Parent Container div (+ Position relative, denn ohne geht kein Position absolute in den Children) */
+
+div {
+    margin: 100px;
+    width: 400px;
+    height: 120px;
+    text-align: center;
+    position: relative;
+}
+
+/* Textbearbeitung */
+
+p::first-letter {
+    font-weight: bold;
+    font-size: 24px;;
+}
+
+/* Mit Pseudo Elementen können Bilder vor und hinter dem p Tag eingefügt */
+
+p::before {
+    content: '';
+    background: url("../img/anfuehrungsstriche_oben.png") center / cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: -60px;
+    top: -20px;
+}
+
+p::after {
+    content: '';
+    background: url("../img/anfuehrungsstriche_unten.png") center / cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 400px;
+    top: 80px;
+}
+
+/* Kund:in Beschreibung */
+
+h4 {
+    margin-top: 10px;
+}
+
+h4::before {
+    content: '- ';
+}
+
+/* Span-Elemente stylen einzelne Textabschnitte im p Tag */
+
+span {
+    border-bottom: 2px solid black;
+}
+
+span:nth-of-type(1):hover {
+    border: 2px solid black;
+    transition-delay: 0.1s;
+}
+
+span:nth-of-type(2):hover {
+    background-color: black;
+    color: white;
+    transition-delay: 0.1s;
+}
